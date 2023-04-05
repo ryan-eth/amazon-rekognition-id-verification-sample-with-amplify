@@ -286,7 +286,7 @@ export enum ModelSortDirection {
 
 export type ModelUserInfoConnection = {
   __typename: "ModelUserInfoConnection",
-  items?:  Array<UserInfo | null > | null,
+  items:  Array<UserInfo | null >,
   nextToken?: string | null,
 };
 
@@ -301,7 +301,7 @@ export type ModelConfigEntryFilterInput = {
 
 export type ModelConfigEntryConnection = {
   __typename: "ModelConfigEntryConnection",
-  items?:  Array<ConfigEntry | null > | null,
+  items:  Array<ConfigEntry | null >,
   nextToken?: string | null,
 };
 
@@ -318,7 +318,7 @@ export type ModelCachedCollectionListFilterInput = {
 
 export type ModelCachedCollectionListConnection = {
   __typename: "ModelCachedCollectionListConnection",
-  items?:  Array<CachedCollectionList | null > | null,
+  items:  Array<CachedCollectionList | null >,
   nextToken?: string | null,
 };
 
@@ -676,7 +676,7 @@ export type ListUserInfosQueryVariables = {
 export type ListUserInfosQuery = {
   listUserInfos?:  {
     __typename: "ModelUserInfoConnection",
-    items?:  Array< {
+    items:  Array< {
       __typename: "UserInfo",
       companyid: string,
       userid: string,
@@ -689,7 +689,7 @@ export type ListUserInfosQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null >,
     nextToken?: string | null,
   } | null,
 };
@@ -706,7 +706,7 @@ export type UserInfoByFaceIdQueryVariables = {
 export type UserInfoByFaceIdQuery = {
   userInfoByFaceId?:  {
     __typename: "ModelUserInfoConnection",
-    items?:  Array< {
+    items:  Array< {
       __typename: "UserInfo",
       companyid: string,
       userid: string,
@@ -719,7 +719,7 @@ export type UserInfoByFaceIdQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null >,
     nextToken?: string | null,
   } | null,
 };
@@ -736,7 +736,7 @@ export type UserInfoByRegStatusQueryVariables = {
 export type UserInfoByRegStatusQuery = {
   userInfoByRegStatus?:  {
     __typename: "ModelUserInfoConnection",
-    items?:  Array< {
+    items:  Array< {
       __typename: "UserInfo",
       companyid: string,
       userid: string,
@@ -749,7 +749,7 @@ export type UserInfoByRegStatusQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null >,
     nextToken?: string | null,
   } | null,
 };
@@ -782,14 +782,14 @@ export type ListConfigEntriesQueryVariables = {
 export type ListConfigEntriesQuery = {
   listConfigEntries?:  {
     __typename: "ModelConfigEntryConnection",
-    items?:  Array< {
+    items:  Array< {
       __typename: "ConfigEntry",
       configroot: string,
       configid: string,
       value: string,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null >,
     nextToken?: string | null,
   } | null,
 };
@@ -824,7 +824,7 @@ export type ListCachedCollectionListsQueryVariables = {
 export type ListCachedCollectionListsQuery = {
   listCachedCollectionLists?:  {
     __typename: "ModelCachedCollectionListConnection",
-    items?:  Array< {
+    items:  Array< {
       __typename: "CachedCollectionList",
       configroot: string,
       collectionid: string,
@@ -833,7 +833,7 @@ export type ListCachedCollectionListsQuery = {
       facemodel: string,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null >,
     nextToken?: string | null,
   } | null,
 };

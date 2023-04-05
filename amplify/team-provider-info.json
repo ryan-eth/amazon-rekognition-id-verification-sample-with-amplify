@@ -24,6 +24,55 @@
         "S3Triggerb6cacc90": {
           "deploymentBucketName": "amplify-amazonrekognitionidv-dev-122824-deployment",
           "s3Key": "amplify-builds/S3Triggerb6cacc90-4d785a62696c4b6d794f-build.zip"
+        },
+        "amazonrekognitionidv": {},
+        "amazonrekognitionidv6570cbea": {},
+        "idvimagebucket": {},
+        "userPoolGroups": {}
+      }
+    }
+  },
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amazonrekognitionidv-staging-60943-authRole",
+      "UnauthRoleArn": "arn:aws:iam::457822725819:role/amplify-amazonrekognitionidv-staging-60943-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::457822725819:role/amplify-amazonrekognitionidv-staging-60943-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amazonrekognitionidv-staging-60943-deployment",
+      "UnauthRoleName": "amplify-amazonrekognitionidv-staging-60943-unauthRole",
+      "StackName": "amplify-amazonrekognitionidv-staging-60943",
+      "StackId": "arn:aws:cloudformation:us-east-1:457822725819:stack/amplify-amazonrekognitionidv-staging-60943/f0c7af60-d356-11ed-b9d8-0eb8d30df3e7",
+      "AmplifyAppId": "d3edohvdga4e73"
+    },
+    "categories": {
+      "auth": {
+        "amazonrekognitionidv6570cbea": {},
+        "userPoolGroups": {}
+      },
+      "function": {
+        "S3Triggerb6cacc90": {
+          "deploymentBucketName": "amplify-amazonrekognitionidv-staging-60943-deployment",
+          "s3Key": "amplify-builds/S3Triggerb6cacc90-54542b55706c434a576a-build.zip"
+        },
+        "idvworkflowfn": {
+          "deploymentBucketName": "amplify-amazonrekognitionidv-staging-60943-deployment",
+          "s3Key": "amplify-builds/idvworkflowfn-30435379315533507639-build.zip"
+        },
+        "amazonrekognitionidv": {},
+        "amazonrekognitionidv6570cbea": {},
+        "idvimagebucket": {},
+        "userPoolGroups": {}
+      },
+      "api": {
+        "amazonrekognitionidv": {}
+      },
+      "storage": {
+        "idvimagebucket": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3edohvdga4e73",
+          "type": "manual"
         }
       }
     }

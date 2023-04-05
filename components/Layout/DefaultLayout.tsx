@@ -1,10 +1,11 @@
-import { AmplifyAuthenticator } from "@aws-amplify/ui-react";
+import { Authenticator } from "@aws-amplify/ui-react";
 import React, { useCallback } from "react";
 import { Auth } from 'aws-amplify';
 import Head from "next/head";
 import Link from "next/link"
 import Sidebar from "../../components/sidebar"
 import PageHeading from "../../components/pageheadingcomponent";
+import '@aws-amplify/ui-react/styles.css';
 
 export interface DefaultLayoutProps {
   username: string,
@@ -51,7 +52,7 @@ export default function DefaultLayout(props: DefaultLayoutProps) {
         </div>
       </div>
 
-      <AmplifyAuthenticator>
+      <Authenticator>
         <div className="container-fluid">
           <div className="row">
             <Sidebar {...sidebarPropsVal} />
@@ -63,7 +64,7 @@ export default function DefaultLayout(props: DefaultLayoutProps) {
             </main>
           </div>
         </div>
-      </AmplifyAuthenticator>
+      </Authenticator>
 
     </div>
   )
